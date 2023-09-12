@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPos</title>
+  <link rel="stylesheet" href="signin.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="container_1">
+    <div class="illus-Container">
+      <div class="wrapper-illus">
+
+        <div class="slider" id="slide1">
+          <img src="images/illust1.png" alt="illustration">
+          <h1>Manage your inventory better</h1>
+        </div>
+  
+        <div class="slider" id="slide2">
+          <img src="images/illust2.png" alt="illustration">
+          <h1>All your activities at one place</h1>
+        </div>
+  
+        <div class="slider" id="slide3">
+          <img src="images/illust3.png" alt="illustration">
+          <h1>Get insights on sales </h1>
+        </div>
+     </div>
+     <div class="navigator">
+      <a class="btn" ></a>
+      <a class="btn"></a>
+      <a class="btn"></a>
+      </div>
+    </div>
+
+  </section>
+  <section class="wrapper-box">
+    <div class="semi-wrapper-box">
+      <img src="images/logo_thin-53868078.png" alt="logo">
+      <div class="formcontainer">
+        <!-- below is the set of form container--> 
+        <div class="formCon hiddenform active">
+          <form>
+            <h2>login</h2>
+            <input type="text" placeholder="Enter your username or email">
+            <input type="password" placeholder="Enter your password">
+            <a href="#" onclick="goToPageTwo()">Forget your passwood?</a>
+            <div class="btnCon">
+              <button type="submit">Log in &#8594;</button>
+              <a onclick="goToPageFour()" id="clickBtn">sign up &#8594;</a>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="formCon2 hiddenform">
+          <form action="">
+            <h2>change password</h2>
+            <label for="email">email</label>
+            <a href="#" class="goToResetByPhone" onclick="goToPageThree()">reset by phone</a>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">submit &#8594;</button>
+            <a href="#" class="returnFormCon" onclick="returnFormCon()">Go back to login</a>
+          </form>
+        </div>
+
+        <div class="formCon3 hiddenform">
+          <form action="">
+            <h2>change password</h2>
+            <label for="Phone">Phone</label>
+            <a href="#" class="goToResetByEmail" onclick="goToPageTwoCon()">reset by email</a>
+            <input type="number" placeholder="Enter your number">
+            <button type="submit">submit &#8594;</button>
+            <a href="#" class="returnFormCon" onclick="returnToPageOne()">Go back to login</a>
+          </form>
+        </div>
+
+        <div class="formCon4 hiddenform">
+          <form action="">
+            <h2>create account</h2>
+            <label for="Business">Business name</label>
+            <input type="text" placeholder="Wakulima agrovets" name="Business">
+            <label for="email">Email address</label>
+            <input type="email" placeholder="email@example.com" name="email">
+            <label for="phone">phone number</label>
+            <div class="phoneCon">
+              <select name="country" id="country">
+                <option value="kenya">+234</option>
+                <option value="kenya">+234</option>
+                <option value="kenya">+234</option>
+                <option value="kenya">+234</option>
+                <option value="kenya">+234</option>
+              </select>
+              <input type="phone" placeholder="i.e 704664110" name="phone">
+            </div>
+            <label for="passwood">passwood</label>
+            <input type="password" placeholder="passwood" name="passwood">
+            <label for="confirm passwood">confirm passwood</label>
+            <input type="password" placeholder="confirm passwood" name="confirm passwood">
+            <div class="signBtnCon">
+              <button>sign up &#8594;</button>
+              <a onclick="goToPageOne()" id="goToPageOne">Log in &#8594;</a>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="signin.js"></script>
+</body>
+</html>
